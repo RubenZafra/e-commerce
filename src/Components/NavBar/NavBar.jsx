@@ -7,13 +7,17 @@ import  { NavList }  from './NavList'
 
 export const NavBar = () => {
     return (
-        <div className="flex justify-around">
-        <Logo />
-        <NavList />
-        <SearchBar />
-        <Cart />
-        <Button name='Log In'/>
-        <Button name='Sign In'/>       
+        <div className="flex justify-around h-40 items-center bg-orange-200">
+            <Logo />
+            <div className="flex">
+                <NavList />
+                <SearchBar />
+            </div>
+            <Cart />
+            <div>
+                <Button name='Log In'/>
+                <Button name='Sign In'/>       
+            </div>
         </div>
     )
 }

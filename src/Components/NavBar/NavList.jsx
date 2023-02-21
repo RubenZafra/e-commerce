@@ -3,12 +3,10 @@ import {NavListElement} from './NavListElement'
 
 export const NavList = () => {
   return (
-    <div>       
-      <ul>
+    <div className='flex flex-row gap-5'>          
         <NavListElement name="Home" />
         <NavListElement name="Spare Parts" />
         <NavListElement name="Contact" />
-      </ul>
     </div>
   )
 }
