@@ -3,19 +3,21 @@ import React from 'react'
 
 export const Card = ({product}) => {
 
+  const {img, productName, price} = product
+
   return (
       <div className=" border-gray-100/30 flex w-full max-w-xs flex-col self-center overflow-hidden rounded-lg border bg-gray-700 shadow-md">
         <a className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="www.google.com">
-          <img className="peer absolute top-0 right-0 h-full w-full object-cover" src={product.img} alt="product"/>
+          <img className="peer absolute top-0 right-0 h-full w-full object-cover" src={img} alt="product"/>
         </a>
         <div className="mt-4 px-5 pb-5">
           <a href="www.google.com">
-            <h5 className="text-xl tracking-tight text-white">{product.productName}</h5>
+            <h5 className="text-xl tracking-tight text-white">{productName}</h5>
           </a>
           <div className="mt-2 mb-5 flex items-center justify-between">
             <p>
-              <span className="text-3xl font-bold text-white">{product.price}€</span>
-              <span className="text-sm text-white line-through">{product.price + 50}€</span>
+              <span className="text-3xl font-bold text-white">{price}€</span>
+              <span className="text-sm text-white line-through">{price + 50}€</span>
             </p>
           </div>
             <a href="www.google.com" className="hover:border-white/40 flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300">
